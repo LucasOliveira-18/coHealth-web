@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+/*
+ * CoHealth design tokens (migrated from the former inline tailwind.config
+ * CDN block). Build with: make build  (see Makefile)
+ */
+@theme {
+  /* ---- Colors (Material 3 palette) ---- */
+  --color-primary: #5b6051;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #9ba08e;
+  --color-on-primary-container: #323729;
+  --color-primary-fixed: #e0e5d1;
+  --color-primary-fixed-dim: #c4c9b5;
+  --color-on-primary-fixed: #191d11;
+  --color-on-primary-fixed-variant: #44493a;
+  --color-inverse-primary: #c4c9b5;
+
+  --color-secondary: #6c5b4b;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #f3dcc7;
+  --color-on-secondary-container: #715f4f;
+  --color-secondary-fixed: #f6deca;
+  --color-secondary-fixed-dim: #d9c3af;
+  --color-on-secondary-fixed: #25190d;
+  --color-on-secondary-fixed-variant: #534435;
+
+  --color-tertiary: #695c4f;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #ab9b8c;
+  --color-on-tertiary-container: #3e3328;
+  --color-tertiary-fixed: #f2dfcf;
+  --color-tertiary-fixed-dim: #d5c4b4;
+  --color-on-tertiary-fixed: #231a10;
+  --color-on-tertiary-fixed-variant: #504539;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-background: #fcf9f8;
+  --color-on-background: #1b1c1c;
+  --color-surface: #fcf9f8;
+  --color-on-surface: #1b1c1c;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-bright: #fcf9f8;
+  --color-surface-variant: #e5e2e1;
+  --color-on-surface-variant: #464740;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e5e2e1;
+  --color-surface-tint: #5b6051;
+  --color-inverse-surface: #303030;
+  --color-inverse-on-surface: #f3f0ef;
+  --color-outline: #767870;
+  --color-outline-variant: #c7c7be;
+
+  --color-clinical-white: #ffffff;
+  --color-success-green: #8cc63f;
+  --color-soft-slate: #757575;
+
+  /* Footer brand color (formerly a hard-coded #2c3e50) */
+  --color-footer: #2c3e50;
+
+  /* ---- Border radius (lg/xl keep the design's tighter radii; full is
+   * restored to a true pill/circle — the original override to 0.75rem
+   * broke every rounded-full button and avatar) ---- */
+  --radius-sm: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 9999px;
+
+  /* ---- Spacing tokens ---- */
+  --spacing-gutter: 1.5rem;
+  --spacing-stack-sm: 0.5rem;
+  --spacing-stack-md: 1rem;
+  --spacing-section-gap: 4rem;
+  --spacing-margin-desktop: 5rem;
+  --spacing-margin-tablet: 2.5rem;
+  --spacing-margin-mobile: 1rem;
+
+  /* ---- Font families ---- */
+  --font-headline-xl: "Source Serif 4", serif;
+  --font-headline-lg: "Source Serif 4", serif;
+  --font-headline-lg-mobile: "Source Serif 4", serif;
+  --font-headline-md: "Source Serif 4", serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-label-lg: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+
+  /* ---- Font sizes (px values match the original design) ---- */
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 56px;
+  --text-headline-xl--font-weight: 600;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--font-weight: 600;
+
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 36px;
+  --text-headline-lg-mobile--font-weight: 600;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 500;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-md: 14px;
+  --text-label-md--line-height: 20px;
+  --text-label-md--letter-spacing: 0.02em;
+  --text-label-md--font-weight: 500;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.05em;
+  --text-label-sm--font-weight: 600;
+}
+
+/* Material Symbols (Google Fonts) renders as text by default; keep icons
+ * centered and inherit the current color unless a text-* class is set. */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
+
+/* Active navigation link state (toggled by js/site.js) */
+.nav-link[data-active="true"] {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Single-page scrolling: smooth anchor navigation with an offset for the
+ * sticky navbar, respecting the user's reduced-motion preference. */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+main section[id] {
+  scroll-margin-top: 6rem;
+}

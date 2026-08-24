@@ -2,218 +2,77 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>CoHealth - Humanist Healthcare for everyone</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="description" content="CoHealth is a serene clinical space dedicated to humanist healthcare: qualified doctors, specialized clinics, diagnostics and compassionate care for everyone.">
+    <meta property="og:title" content="CoHealth - Humanist Healthcare for everyone">
+    <meta property="og:description" content="A serene clinical space dedicated to humanist healthcare.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cohealth.example/">
+    <meta property="og:image" content="images/hero.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%235b6051'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif'%3E%2B%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "tertiary-container": "#ab9b8c",
-                        "secondary-container": "#f3dcc7",
-                        "on-tertiary": "#ffffff",
-                        "surface-container": "#f0eded",
-                        "surface-variant": "#e5e2e1",
-                        "surface-dim": "#dcd9d9",
-                        "on-error-container": "#93000a",
-                        "on-secondary-fixed-variant": "#534435",
-                        "inverse-primary": "#c4c9b5",
-                        "on-primary-fixed": "#191d11",
-                        "surface-container-low": "#f6f3f2",
-                        "on-primary-container": "#323729",
-                        "on-surface-variant": "#464740",
-                        "on-secondary": "#ffffff",
-                        "clinical-white": "#FFFFFF",
-                        "on-error": "#ffffff",
-                        "on-primary-fixed-variant": "#44493a",
-                        "success-green": "#8CC63F",
-                        "surface-container-lowest": "#ffffff",
-                        "soft-slate": "#757575",
-                        "error": "#ba1a1a",
-                        "on-surface": "#1b1c1c",
-                        "on-tertiary-fixed": "#231a10",
-                        "on-tertiary-fixed-variant": "#504539",
-                        "tertiary-fixed": "#f2dfcf",
-                        "on-background": "#1b1c1c",
-                        "error-container": "#ffdad6",
-                        "secondary-fixed": "#f6deca",
-                        "primary-container": "#9ba08e",
-                        "primary-fixed": "#e0e5d1",
-                        "outline": "#767870",
-                        "outline-variant": "#c7c7be",
-                        "secondary-fixed-dim": "#d9c3af",
-                        "primary-fixed-dim": "#c4c9b5",
-                        "surface": "#fcf9f8",
-                        "surface-bright": "#fcf9f8",
-                        "secondary": "#6c5b4b",
-                        "background": "#fcf9f8",
-                        "on-secondary-container": "#715f4f",
-                        "surface-tint": "#5b6051",
-                        "inverse-on-surface": "#f3f0ef",
-                        "surface-container-high": "#eae7e7",
-                        "tertiary": "#695c4f",
-                        "surface-container-highest": "#e5e2e1",
-                        "primary": "#5b6051",
-                        "on-secondary-fixed": "#25190d",
-                        "on-tertiary-container": "#3e3328",
-                        "tertiary-fixed-dim": "#d5c4b4",
-                        "inverse-surface": "#303030",
-                        "on-primary": "#ffffff"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "gutter": "1.5rem",
-                        "stack-sm": "0.5rem",
-                        "section-gap": "4rem",
-                        "margin-desktop": "5rem",
-                        "margin-tablet": "2.5rem",
-                        "margin-mobile": "1rem",
-                        "stack-md": "1rem"
-                    },
-                    "fontFamily": {
-                        "headline-lg-mobile": [
-                            "\"Source Serif 4\""
-                        ],
-                        "headline-xl": [
-                            "\"Source Serif 4\""
-                        ],
-                        "label-sm": [
-                            "Inter"
-                        ],
-                        "body-lg": [
-                            "Inter"
-                        ],
-                        "body-md": [
-                            "Inter"
-                        ],
-                        "headline-md": [
-                            "\"Source Serif 4\""
-                        ],
-                        "label-md": [
-                            "Inter"
-                        ],
-                        "headline-lg": [
-                            "\"Source Serif 4\""
-                        ]
-                    },
-                    "fontSize": {
-                        "headline-lg-mobile": [
-                            "28px",
-                            {
-                                "lineHeight": "36px",
-                                "fontWeight": "600"
-                            }
-                        ],
-                        "headline-xl": [
-                            "48px",
-                            {
-                                "lineHeight": "56px",
-                                "fontWeight": "600"
-                            }
-                        ],
-                        "label-sm": [
-                            "12px",
-                            {
-                                "lineHeight": "16px",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                            }
-                        ],
-                        "body-lg": [
-                            "18px",
-                            {
-                                "lineHeight": "28px",
-                                "fontWeight": "400"
-                            }
-                        ],
-                        "body-md": [
-                            "16px",
-                            {
-                                "lineHeight": "24px",
-                                "fontWeight": "400"
-                            }
-                        ],
-                        "headline-md": [
-                            "24px",
-                            {
-                                "lineHeight": "32px",
-                                "fontWeight": "500"
-                            }
-                        ],
-                        "label-md": [
-                            "14px",
-                            {
-                                "lineHeight": "20px",
-                                "letterSpacing": "0.02em",
-                                "fontWeight": "500"
-                            }
-                        ],
-                        "headline-lg": [
-                            "32px",
-                            {
-                                "lineHeight": "40px",
-                                "fontWeight": "600"
-                            }
-                        ]
-                    }
-                },
-            },
-        }
-    </script>
+    <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
-<!-- Top Bar -->
-<div class="bg-surface-container-low border-b border-outline-variant/20 hidden md:block py-2">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-end items-center gap-8">
-        <div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
-            <span class="material-symbols-outlined text-primary text-sm">phone</span>
-            +1 234 567 890
-        </div>
-        <div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
-            <span class="material-symbols-outlined text-primary text-sm">location_on</span>
-            123 Serenity Way, Clinic District, NY 10001
+<!-- Top Bar (brand bar) -->
+<div class="bg-surface-container-low border-b border-outline-variant/20 py-3 md:py-4">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center gap-4">
+        <a class="flex items-center gap-2" href="#home" aria-label="CoHealth home">
+            <img alt="CoHealth Logo" class="h-9 md:h-11 object-contain" src="images/logo.png">
+        </a>
+        <div class="flex items-center gap-6">
+            <div class="hidden sm:flex items-center gap-2 text-on-surface-variant font-label-sm">
+                <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                123 Serenity Way, Clinic District, NY 10001
+            </div>
+            <div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
+                <span class="material-symbols-outlined text-primary text-sm">phone</span>
+                +1 234 567 890
+            </div>
         </div>
     </div>
 </div>
 <!-- TopNavBar -->
 <nav class="bg-surface w-full top-0 transition-all duration-300 ease-in-out sticky z-50 shadow-sm">
-    <div class="flex justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-4">
-        <a class="flex items-center gap-2" href="#">
-            <img alt="CoHealth Logo" class="h-8 md:h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-nJvpeBK8-z6Xf11ycytIj_NTddbUEI6JxbQt9TiY4VddOyzwoFm9dCXRklu9TrzNMRl2L45dXfIYxWb2RLzG8DIrLe9IZwOaZ5WqVtaWGt6ZdmW1UUZfkwC1rY3aY_Djyd8Iw8FpTdF4jul3FKCbZeFBOyLq3tIeg32afmFqWPfCYUz_FNU7cBwQNcEJZd7OZVBT3bjdPhVdQprpmNzarO_Tm7Y3Sox-b02EekxdPMzka4y-LyWY9XKIP2AeYxwxgA">
-        </a>
-        <div class="hidden md:flex items-center gap-6">
-            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" href="#">Home</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" href="#">Services</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" href="#">About Us</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" href="#">Specialists</a>
-            <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" href="#">Patient Portal</a>
-        </div>
-        <div class="flex items-center gap-4"><button class="hidden md:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-label-md px-3 py-2 border border-outline-variant/20 rounded-full">
-            <span class="material-symbols-outlined text-sm">language</span>
-            <span class="">EN/PT</span>
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-4 gap-4">
+        <button id="menu-toggle" class="md:hidden text-on-surface p-2 -ml-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="material-symbols-outlined">menu</span>
         </button>
-            <button class="hidden md:inline-flex bg-primary text-on-primary h-10 px-6 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors">
-                Make an Appointment
+        <div class="hidden md:flex items-center gap-6">
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="home" href="#home">Home</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="services" href="#services">Services</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="about" href="#about">About Us</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="specialists" href="#specialists">Specialists</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="portal" href="#portal">Patient Portal</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="hidden md:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-label-md px-3 py-2 border border-outline-variant/20 rounded-full" aria-label="Change language">
+                <span class="material-symbols-outlined text-sm">language</span>
+                <span>EN/PT</span>
             </button>
-            <button class="md:hidden text-on-surface p-2">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
+            <a href="#portal" class="hidden sm:inline-flex bg-primary text-on-primary h-10 px-6 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors">Make an Appointment</a>
+            <a href="#portal" class="sm:hidden inline-flex bg-primary text-on-primary h-10 w-10 items-center justify-center rounded-full" aria-label="Make an Appointment">
+                <span class="material-symbols-outlined text-sm">calendar_month</span>
+            </a>
+        </div>
+    </div>
+    <!-- Mobile menu panel -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/20 bg-surface">
+        <div class="px-margin-mobile py-4 flex flex-col gap-1">
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="home" href="#home">Home</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="services" href="#services">Services</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="about" href="#about">About Us</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="specialists" href="#specialists">Specialists</a>
+            <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md px-3 py-2" data-nav="portal" href="#portal">Patient Portal</a>
+            <a href="#portal" class="mt-3 inline-flex bg-primary text-on-primary h-10 px-6 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors">Make an Appointment</a>
         </div>
     </div>
 </nav>
 <main>
     <!-- Hero Section -->
-    <section class="relative h-[80vh] flex items-center justify-center pt-20 pb-32 md:pt-32 md:pb-48 px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface-variant">
+    <section id="home" class="relative h-[80vh] flex items-center justify-center pt-20 pb-32 md:pt-32 md:pb-48 px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface-variant">
         <div class="absolute inset-0 z-0">
-            <div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfaA3hOiBwrS2sk5qlukFoo7QxxGzS6M2YpJzfo20gRUNGpySvfRTQ8ad6q6M2V0vUtwk4oi-ujakkDs3KBRBNANRI3kKpxrwcmGSSnJ0Pm0Gth2rF3xGed5PcJEKgwxAap-fvuEH60A_PkjCYEeG9tq8DYDBFgQXuU2aaW6jqI_1t082alhQsTskHLJfjotmGXYH8CEtWwyEvCvrCO74nxbkf6778ce9GDuunxe50UyvNymjYT1ky');"></div>
+            <div class="bg-cover bg-center w-full h-full" style="background-image: url('images/hero.jpg');"></div>
             <div class="absolute inset-0 bg-surface/60 backdrop-blur-sm"></div>
         </div>
         <div class="relative z-10 text-center space-y-6 max-w-3xl mx-auto">
@@ -221,11 +80,11 @@
                 Special offer! <br><span class="text-primary font-bold">Free Consultation</span> this month only
             </h1>
             <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto pb-4">
-                Espaço para crescer. Liberdade para cuidar. We believe in providing space to grow and the freedom to care, delivering a modern, serene healthcare experience tailored to your unique needs.
+                We believe in providing space to grow and the freedom to care, delivering a modern, serene healthcare experience tailored to your unique needs.
             </p>
-            <button class="bg-primary text-on-primary h-12 px-8 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors w-full sm:w-auto">
+            <a href="#portal" class="inline-flex bg-primary text-on-primary h-12 px-8 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors w-full sm:w-auto">
                 Book Appointment
-            </button>
+            </a>
         </div>
     </section>
     <!-- Floating Cards Section -->
@@ -254,10 +113,10 @@
         </div>
     </section>
     <!-- About Section -->
-    <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+    <section id="about" class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="relative rounded-lg overflow-hidden h-[400px] md:h-[600px] shadow-lg">
-                <div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBO0bRJvjcqC1_yUBT5g5dCXRObnO359XYh7oHDEnt2vbooT1w94MYYQvng67n9EOFwME86NsDnPLA02O0IHrNmMXTCqPy5yW-CdF5pB4DhJUTNWh3WqE_vXS02NTWk_jDNmyJTqa0tXfTD0neX7BI55bfd9pURA2KxenkLUiAEFlPlU6YbUO3TGO8FHO4pzsSCFeYo0rwFUeB8o2NK65t4od-expiOsedqN6Zh0B9dqKD0WL1XKXuL')"></div>
+                <div class="bg-cover bg-center w-full h-full" style="background-image: url('images/about.jpg')"></div>
             </div>
             <div class="space-y-6">
                 <h2 class="font-headline-md text-headline-md text-on-surface">About CoHealth</h2>
@@ -283,19 +142,36 @@
                 </div>
             </div>
         </div>
+                <div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-8 text-center">
+                        <div class="w-14 h-14 mx-auto mb-4 bg-primary text-on-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined">grow</span></div>
+                        <h4 class="font-label-md text-on-surface font-bold mb-2 uppercase">Space to Grow</h4>
+                        <p class="text-on-surface-variant text-sm">Environments designed to feel open, calm, and unhurried — for patients and practitioners alike.</p>
+                    </div>
+                    <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-8 text-center">
+                        <div class="w-14 h-14 mx-auto mb-4 bg-primary text-on-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined">volunteer_activism</span></div>
+                        <h4 class="font-label-md text-on-surface font-bold mb-2 uppercase">Freedom to Care</h4>
+                        <p class="text-on-surface-variant text-sm">Autonomy for our team to listen first and treat second, tailoring every plan to the person in front of them.</p>
+                    </div>
+                    <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-8 text-center">
+                        <div class="w-14 h-14 mx-auto mb-4 bg-primary text-on-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined">spa</span></div>
+                        <h4 class="font-label-md text-on-surface font-bold mb-2 uppercase">Modern Serenity</h4>
+                        <p class="text-on-surface-variant text-sm">Modern technology and architecture woven together to feel calm, dignified, and human.</p>
+                    </div>
+                </div>
     </section>
     <!-- Appointment Banner -->
     <section class="bg-primary py-12 px-margin-mobile md:px-margin-desktop text-center flex flex-col md:flex-row justify-center items-center gap-6">
         <h2 class="font-headline-md text-on-primary">Make an appointment</h2>
-        <button class="border border-on-primary text-on-primary h-12 px-8 rounded-full font-label-md hover:bg-on-primary hover:text-primary transition-colors">
+        <a href="#portal" class="inline-flex border border-on-primary text-on-primary h-12 px-8 items-center justify-center rounded-full font-label-md hover:bg-on-primary hover:text-primary transition-colors">
             Book an Appointment
-        </button>
+        </a>
     </section>
     <!-- Services Section -->
-    <section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+    <section id="services" class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16 space-y-4">
-                <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wider text-sm font-bold">Our Services</h2>
+                <h2 class="font-label-md text-on-surface uppercase tracking-wider text-sm font-bold">Our Services</h2>
                 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto text-sm">Dedicated to providing holistic and specialized care in a serene environment designed for your comfort and well-being.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -354,11 +230,24 @@
                         <p class="text-on-surface-variant text-sm">Accessible healthcare solutions tailored to your unique needs.</p>
                     </div>
                 </div>
+                <div class="flex items-start gap-4 p-4">
+                    <div class="w-12 h-12 bg-primary-fixed text-primary rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined">monitor_heart</span></div>
+                    <div><h3 class="font-label-md text-on-surface font-bold mb-2 uppercase">Patient Diagnostics</h3><p class="text-on-surface-variant text-sm">Modern imaging and laboratory services with clear, human explanations of every result.</p></div>
+                </div>
+                <div class="flex items-start gap-4 p-4">
+                    <div class="w-12 h-12 bg-primary-fixed text-primary rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined">vaccines</span></div>
+                    <div><h3 class="font-label-md text-on-surface font-bold mb-2 uppercase">Specialized Clinics</h3><p class="text-on-surface-variant text-sm">Focused clinics for cardiology, neurology, pediatrics and more — all under one serene roof.</p></div>
+                </div>
+                <div class="flex items-start gap-4 p-4">
+                    <div class="w-12 h-12 bg-primary-fixed text-primary rounded-full flex items-center justify-center shrink-0"><span class="material-symbols-outlined">fitness_center</span></div>
+                    <div><h3 class="font-label-md text-on-surface font-bold mb-2 uppercase">Rehabilitation</h3><p class="text-on-surface-variant text-sm">Comprehensive recovery plans built with our physiotherapists, at your pace, with your goals.</p></div>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- Stats Section -->
-    <section class="py-20 bg-primary bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] text-on-primary">
+    <section class="py-20 bg-primary bg-[url('images/cubes.png')] text-on-primary">
         <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
                 <div class="flex justify-center mb-4"><span class="material-symbols-outlined text-4xl">group</span></div>
@@ -382,14 +271,79 @@
             </div>
         </div>
     </section>
+
+    <section id="specialists">
+        <div class="bg-surface-container-low border-b border-outline-variant/20">
+            <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap text-center space-y-4">
+                <h2 class="font-label-md text-primary uppercase tracking-wider text-sm font-bold">Specialists</h2>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">A team that listens before it prescribes</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Every CoHealth specialist is chosen for expertise and empathy in equal measure.</p>
+            </div>
+        </div>
+        <div class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">stethoscope</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. Lucas Almeida</h3>
+                    <p class="text-sm text-primary font-bold mt-1">General Medicine</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, 15 years of practice</p>
+                </div>
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">monitor_heart</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. Maria Fernanda Costa</h3>
+                    <p class="text-sm text-primary font-bold mt-1">Cardiology</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, PhD, 12 years of practice</p>
+                </div>
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">psychology</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. Camila Duarte</h3>
+                    <p class="text-sm text-primary font-bold mt-1">Psychiatry</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, 10 years of practice</p>
+                </div>
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">child_care</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. Elena Petrova</h3>
+                    <p class="text-sm text-primary font-bold mt-1">Pediatrics</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, 11 years of practice</p>
+                </div>
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">orthopedics</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. James Whitfield</h3>
+                    <p class="text-sm text-primary font-bold mt-1">Orthopedics</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, 16 years of practice</p>
+                </div>
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">spa</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. Priya Sharma</h3>
+                    <p class="text-sm text-primary font-bold mt-1">Dermatology</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, 9 years of practice</p>
+                </div>
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">psychology</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. Ahmed Hassan</h3>
+                    <p class="text-sm text-primary font-bold mt-1">Neurology</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, 14 years of practice</p>
+                </div>
+                <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary-fixed text-primary rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-3xl">biotech</span></div>
+                    <h3 class="font-label-md text-on-surface font-bold">Dr. Robert Chen</h3>
+                    <p class="text-sm text-primary font-bold mt-1">Oncology</p>
+                    <p class="text-xs text-on-surface-variant mt-2">MD, PhD, 18 years of practice</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <a href="#portal" class="inline-flex bg-primary text-on-primary h-12 px-8 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors">Request an Appointment</a>
+            </div>
+        </div>
+    </section>
     <!-- Testimonials Section -->
     <section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
         <div class="max-w-5xl mx-auto text-center">
-            <h2 class="font-headline-md text-headline-md text-on-surface mb-2 uppercase tracking-wider text-sm font-bold">What Our Patients Say</h2>
+            <h2 class="font-label-md text-on-surface mb-2 uppercase tracking-wider text-sm font-bold">What Our Patients Say</h2>
             <p class="font-body-md text-on-surface-variant mb-12 text-sm">A calm and humanist healthcare experience.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-surface p-8 rounded-lg shadow-sm border border-outline-variant/20 relative">
-                    <img alt="Patient" class="w-16 h-16 rounded-full object-cover absolute -top-8 left-1/2 -translate-x-1/2 border-4 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvF2FbDTWwm1l9dfmIgZwIwMfKW46CjQBMJhf5g-jSxbf_FY8BylFrytpwXfRpiZMRubnmX7DXTSOCucoQFoRbY7KrKPjFkh4IMyBgRHitmmS_Nf4BcJHwkJc-ttvIbVdMnOv2Na-Exg1jAOrvFURxwn0oisPwuU3PeJl8yg8MZ4pFL7w4brZ9lNg5WjH_QUruyyRsFIJqy56dF-qX7PE-1vrXg1G1wUTPLkNbLXN1gUs0-1XZ2SEm">
+                    <img alt="Patient" class="w-16 h-16 rounded-full object-cover absolute -top-8 left-1/2 -translate-x-1/2 border-4 border-surface" loading="lazy" src="images/patient-sarah.jpg">
                     <div class="mt-8 text-center">
                         <p class="font-body-md text-on-surface-variant italic mb-4">"The serene environment and attentive care at CoHealth completely changed my perspective on going to the doctor. Truly humanist healthcare."</p>
                         <h4 class="font-label-md font-bold uppercase text-on-surface">Sarah Jenkins</h4>
@@ -399,7 +353,7 @@
                     </div>
                 </div>
                 <div class="bg-surface p-8 rounded-lg shadow-sm border border-outline-variant/20 relative mt-12 md:mt-0">
-                    <img alt="Patient" class="w-16 h-16 rounded-full object-cover absolute -top-8 left-1/2 -translate-x-1/2 border-4 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEIAHD3X4LfXDciuRv7CiBeAe99F25-s7TYPCTTHN_Tn2cavX59GhcVKKj3e_j5yv1GrFdxSxe6xcsemoJZaF0wC0JRsP87fqVjujZ6xWALXzP5opdWQ2wzmS2IULRNIg8RMeJSSAHBSUURqdRd5Jga-xwDi_kIYPEQy3j_4XMmVHIXOuUgA3Ni-9PGnDvsR2xw7A8F-ulB4gK5JJQxI5sFw8VCCX6FnR7Kkmy9PGVqeYXZL7ZPT7Z">
+                    <img alt="Patient" class="w-16 h-16 rounded-full object-cover absolute -top-8 left-1/2 -translate-x-1/2 border-4 border-surface" loading="lazy" src="images/patient-michael.jpg">
                     <div class="mt-8 text-center">
                         <p class="font-body-md text-on-surface-variant italic mb-4">"I appreciate the time they took to listen to my concerns. I didn't feel rushed, and the space itself is beautiful and calming."</p>
                         <h4 class="font-label-md font-bold uppercase text-on-surface">Michael Torres</h4>
@@ -411,9 +365,70 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+    <!-- Portal Section -->
+    <section id="portal">
+        <div class="bg-surface-container-low border-b border-outline-variant/20">
+            <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-section-gap text-center space-y-4">
+                <h2 class="font-label-md text-primary uppercase tracking-wider text-sm font-bold">Patient Portal</h2>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Book your serene clinical experience</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Request an appointment and our team will confirm your slot within one business day.</p>
+            </div>
+        </div>
+        <div class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div class="lg:col-span-2 bg-surface border border-outline-variant/20 rounded-lg p-8">
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-6">Appointment Request</h3>
+                    <form class="space-y-5" onsubmit="event.preventDefault(); this.reset();">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div><label class="block font-label-md text-on-surface mb-1" for="pf-name">Full Name</label><input class="w-full rounded border border-outline-variant bg-surface-container-low px-3 py-2 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="pf-name" name="name" placeholder="Jane Doe" required type="text"></div>
+                            <div><label class="block font-label-md text-on-surface mb-1" for="pf-email">Email</label><input class="w-full rounded border border-outline-variant bg-surface-container-low px-3 py-2 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="pf-email" name="email" placeholder="jane@example.com" required type="email"></div>
+                            <div><label class="block font-label-md text-on-surface mb-1" for="pf-phone">Phone</label><input class="w-full rounded border border-outline-variant bg-surface-container-low px-3 py-2 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="pf-phone" name="phone" placeholder="+1 234 567 890" type="tel"></div>
+                            <div><label class="block font-label-md text-on-surface mb-1" for="pf-service">Service</label><select class="w-full rounded border border-outline-variant bg-surface-container-low px-3 py-2 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="pf-service" name="service" required><option value="">Select a service…</option><option>General Medicine</option><option>Medical Counseling</option><option>Specialized Clinics</option><option>Patient Diagnostics</option><option>Rehabilitation</option><option>Emergency Services</option></select></div>
+                            <div><label class="block font-label-md text-on-surface mb-1" for="pf-date">Preferred Date</label><input class="w-full rounded border border-outline-variant bg-surface-container-low px-3 py-2 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="pf-date" name="date" type="date"></div>
+                            <div><label class="block font-label-md text-on-surface mb-1" for="pf-time">Preferred Time</label><input class="w-full rounded border border-outline-variant bg-surface-container-low px-3 py-2 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="pf-time" name="time" type="time"></div>
+                        </div>
+                        <div><label class="block font-label-md text-on-surface mb-1" for="pf-notes">Notes</label><textarea class="w-full rounded border border-outline-variant bg-surface-container-low px-3 py-2 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="pf-notes" name="notes" placeholder="Anything we should know before your visit?"></textarea></div>
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                            <button class="inline-flex bg-primary text-on-primary h-12 px-8 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors" type="submit">Request Appointment</button>
+                            <p class="text-xs text-on-surface-variant">Demo form — no data is sent. Our team will call you to confirm.</p>
+                        </div>
+                    </form>
+                </div>
+                <aside class="space-y-6">
+                    <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6">
+                        <h4 class="font-label-md text-on-surface font-bold mb-4 uppercase">Opening Hours</h4>
+                        <ul class="space-y-2 text-sm text-on-surface-variant">
+                            <li class="flex justify-between"><span>Monday – Friday</span><span class="text-on-surface">8:00 – 18:00</span></li>
+                            <li class="flex justify-between"><span>Saturday</span><span class="text-on-surface">9:00 – 13:00</span></li>
+                            <li class="flex justify-between"><span>Sunday</span><span class="text-on-surface">Closed</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-surface-container-low border border-outline-variant/20 rounded-lg p-6">
+                        <h4 class="font-label-md text-on-surface font-bold mb-4 uppercase">Get in Touch</h4>
+                        <ul class="space-y-3 text-sm text-on-surface-variant">
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">call</span> +1 234 567 890</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">location_on</span> 123 Serenity Way, Clinic District, NY 10001</li>
+                            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">mail</span> care@cohealth.example</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary text-on-primary rounded-lg p-6">
+                        <h4 class="font-label-md text-on-primary font-bold mb-2 uppercase">Urgent Care</h4>
+                        <p class="text-sm text-on-primary/80">In an emergency, call 911 or visit our Emergency Services directly — no appointment needed.</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
 </main>
 <!-- Footer -->
-<footer class="bg-[#2c3e50] text-white/80 py-16 text-sm">
+<footer class="bg-footer text-white/80 py-16 text-sm">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
         <div class="col-span-1">
             <h4 class="font-label-md text-white font-bold mb-6 uppercase tracking-wider">CoHealth</h4>
@@ -421,40 +436,41 @@
                 A serene clinical space dedicated to humanist healthcare. We believe in providing space to grow and freedom to care in a modern, calming environment.
             </p>
             <div class="flex gap-4">
-                <a class="text-white/60 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+                <a class="text-white/60 hover:text-white transition-colors" href="#home" aria-label="Share CoHealth"><span class="material-symbols-outlined">share</span></a>
             </div>
         </div>
         <div class="col-span-1">
             <h4 class="font-label-md text-white font-bold mb-6 uppercase tracking-wider">Navigation</h4>
             <ul class="space-y-3">
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">Home</a></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">About Us</a></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">Services</a></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">Specialists</a></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">Patient Portal</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#home">Home</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#about">About Us</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#services">Services</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#specialists">Specialists</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#portal">Patient Portal</a></li>
             </ul>
         </div>
         <div class="col-span-1">
             <h4 class="font-label-md text-white font-bold mb-6 uppercase tracking-wider">Our Services</h4>
             <ul class="space-y-3">
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">General Medicine</a></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">Specialized Clinics</a></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">Patient Diagnostics</a></li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#">Medical Counseling</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#services">General Medicine</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#services">Specialized Clinics</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#services">Patient Diagnostics</a></li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-white transition-colors" href="#services">Medical Counseling</a></li>
             </ul>
         </div>
         <div class="col-span-1">
             <h4 class="font-label-md text-white font-bold mb-6 uppercase tracking-wider">Make an Appointment</h4>
             <p class="mb-4">Get in touch with our team to schedule your serene clinical experience.</p>
-            <button class="bg-primary text-on-primary w-full h-10 rounded-full font-label-md hover:bg-surface-tint transition-colors mt-2">
+            <a href="#portal" class="inline-flex bg-primary text-on-primary w-full h-10 items-center justify-center rounded-full font-label-md hover:bg-surface-tint transition-colors mt-2">
                 Book Now
-            </button>
+            </a>
         </div>
     </div>
     <div class="border-t border-white/10 mt-12 pt-8 text-center text-xs text-white/50">
-        © 2024 CoHealth. Humanist Healthcare for everyone.
+        © <span id="year">2024</span> CoHealth. Humanist Healthcare for everyone.
     </div>
 </footer>
 
 
+<script src="js/site.js"></script>
 </body></html>
