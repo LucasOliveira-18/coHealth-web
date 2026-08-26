@@ -53,6 +53,53 @@
     });
   }
 
+  // ---------- Dark Mode Toggle ----------
+  // Theme initialization happens in the inline <head> script (flash-free,
+  // OS-aware). This section only switches the theme, fades the colors, and
+  // keeps the icon / aria-label / browser-chrome color in sync.
+  var themeToggle = document.getElementById("theme-toggle");
+  var themeIcon = document.getElementById("theme-icon");
+  var htmlElement = document.documentElement;
+  var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+  function setTheme(theme) {
+    var isDark = theme === "dark";
+
+    // Enable the color fade for the duration of the switch. The double
+    // requestAnimationFrame guarantees the transition property is committed
+    // before the colors change, so the browser actually animates them.
+    htmlElement.classList.add("theme-transition");
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        htmlElement.classList.toggle("dark", isDark);
+      });
+    });
+
+    themeIcon.textContent = isDark ? "light_mode" : "dark_mode";
+    themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+    if (themeColorMeta) themeColorMeta.setAttribute("content", isDark ? "#121412" : "#fcf9f8");
+
+    localStorage.setItem("theme", theme);
+    clearTimeout(window.__themeTransitionTimer);
+    window.__themeTransitionTimer = setTimeout(function () {
+      htmlElement.classList.remove("theme-transition");
+    }, 400);
+  }
+
+  // Sync icon/aria/meta with the state the head script already applied
+  // (no theme write, no transition).
+  var startDark = htmlElement.classList.contains("dark");
+  themeIcon.textContent = startDark ? "light_mode" : "dark_mode";
+  themeToggle.setAttribute("aria-label", startDark ? "Switch to light mode" : "Switch to dark mode");
+  if (themeColorMeta) themeColorMeta.setAttribute("content", startDark ? "#121412" : "#fcf9f8");
+
+  // Toggle on click (state read from the DOM, not localStorage)
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      setTheme(htmlElement.classList.contains("dark") ? "light" : "dark");
+    });
+  }
+
   // Keep the footer copyright year current
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
