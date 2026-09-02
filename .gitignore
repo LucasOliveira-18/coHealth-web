@@ -2,6 +2,7 @@
 /tailwindcss
 
 # Editor / OS
-.idea/
+/.idea
 .DS_Store
 .reasonix/
+/.reasonix
